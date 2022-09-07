@@ -1,0 +1,64 @@
+Selenium Locators
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Locators are needed so we can identify an element.
+Locators are addresses that identify a web element uniquely within the page.
+
+
+Different types of locators supported by selenium:-
+
+1.) ID
+2.) NAME
+3.) LINKTEXT
+4.) PARTIALLINKTEXT
+5.) CLASS NAME
+6.) TAGNAME
+
+Customized Locators
+
+1.) CSS Locators -
+	a.) Tag and ID
+	b.) Tag and CLASS
+	c.) Tag and attribute
+	d.) Tag, class and attribute
+
+2.) XPath
+	a.) Absolute XPath
+	b.) Relative XPath
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+a.) Identify the element.
+b.) Action on the element.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+CSS Selector Locators:-
+
+1.) Tag & ID : (tag#id) (tag is optional)
+2.) id : #id
+3.) Tag & class : (tag.class) (tag is optional)
+4.) Tag & attribute : [attribute = value] (tag[attribute=value] -> Any attribute available in html can be used.
+5.) Tag, class and attribute = tag.class[attribute = value]
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+XPath
+What is Xpath :- Xpath is defined as XML Path. It is a syntax or language for finding any element on the web page using XML path expression.
+	             Xpath is used to find the location of any element on a webpage using HTML DOM (Document Object Model) structure
+				 Xpath can be used to navigate through elements and attributes in DOM.
+				 
+/html/body/nav/div/a/img
+/html/body/div[3]/div/div/section[1]/div[2]/div/div/div/div/form/div/input
+//*[@id="myText"]
+
+Types of Xpath :-
+
+a.) Absolute Xpath a.k.a full Xpath
+b.) Relative Xpath a.k.a partial Xpath
+
+Difference between absolute and relative xpaths :-
+a.) Absolute Xpath starts from root node where as relative Xpath directly jumps to the element in the DOM.
+b.) Absolute Xpath starts with single / and relative Xpath starts with //.
+c.) Absolute Xpath uses only tags or nodes, where as relative Xpath we use attributes.
+
+
+Syntax of relative xpath.
+a.) //tagname[@attribute = 'Value']
+
+Relative Xpath is preferred over absolute Xpath - Because in absolute Xpath more tags needs to be specified, in case some node is removed then the element cannot be located. 
+											      If the element has moved to some other location, the element cannot be evaluated using absolute xpath. 
